@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #111827;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .left-panel {
+    width: 50%;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center;
+    background-size: cover;
+    overflow: hidden; 
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo {
+    width: 50px; 
+    margin-right: 0.75rem;
+    height: auto;
+  }
+  
+  .odin-text {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 400px;
+  }
+  
+  .photo-credit {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    color: #fff;
+  }
+
+  .right-panel {
+    width: 50%;
+    background-color: #f9fafb; 
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right-panel h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  form {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .input-group input {
+    border: 1px solid #E5E7EB;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .input-group input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+  }
+  
+  .input-group input:invalid {
+    border-color: red;
+  }
+  
+  .btn-submit {
+    background-color: #596D48;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #4d5c3e;
+  }
+
+  .login-redirect {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  .login-redirect a {
+    color: #596D48;
+    text-decoration: none;
+  }
+  .login-redirect a:hover {
+    text-decoration: underline;
+  }
+  
